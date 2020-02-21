@@ -2,7 +2,8 @@
   <span class="input-group-addon flagInput">
          <div class="dropdown">
             <button type="button" class="dropbtn btn" (click)="displayDropDown()">
-              <span [class]="'flag flag-' + selectedCountry.countryCode" *ngIf="selectedCountry"></span>
+<!--              <span [class]="'flag flag-' + selectedCountry.countryCode" *ngIf="selectedCountry"></span>-->
+              <span>{{selectedCountry.countryCode}}</span>
               <span class="defaultCountry" *ngIf="!selectedCountry"></span>
               <span class="arrow-down"></span>
             </button>
